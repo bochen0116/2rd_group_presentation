@@ -10,7 +10,7 @@
 		<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver
 </property>
 		<!-- JDBC URL -->
-		<property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=mis1;encrypt=true;trustServerCertificate=true</property>
+		<property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=crowdgather;encrypt=true;trustServerCertificate=true</property>
 		<!-- 資料庫使用者 -->
 		<property name="connection.username">sa</property>
 		<!-- 資料庫密碼 -->
@@ -22,7 +22,6 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 	
-		<mapping class="tw.BC.model.accountBean" />
 	</session-factory>
 
 </hibernate-configuration>
