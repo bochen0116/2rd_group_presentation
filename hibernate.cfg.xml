@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- JDBC驅動程式 -->
+		<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver
+</property>
+		<!-- JDBC URL -->
+		<property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=mis1;encrypt=true;trustServerCertificate=true</property>
+		<!-- 資料庫使用者 -->
+		<property name="connection.username">sa</property>
+		<!-- 資料庫密碼 -->
+		<property name="connection.password">P@ssw0rd</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+		
+		<property name="hibernate.current_session_context_class">thread</property>
+		
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+	
+		<mapping class="tw.BC.model.accountBean" />
+	</session-factory>
+
+</hibernate-configuration>
