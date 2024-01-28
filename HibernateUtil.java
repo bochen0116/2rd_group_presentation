@@ -1,4 +1,4 @@
-package tw.BC.until;
+package tw.BC.until; // package 還需要討論名稱
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
