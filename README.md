@@ -36,7 +36,7 @@
         | 居住地（市） | addCityid | INT |  | Citys(addCityid) |  |
         | 居住地（區） | addAreaid | INT |  | Areas(addAreaid) |  |
         | 身分證 | uIdCode | CHAR(10) |  |  |  |
-        | 權限 | roleId | INT |  | # |  |
+        | 權限 | wrid | INT |  | WebRole(wpid) |  |
         | 頭貼 ID | userImgId | INT |  | UserImg(userImgId) |  |
     
     ### 簡述
