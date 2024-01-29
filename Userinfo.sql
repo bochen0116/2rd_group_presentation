@@ -1,7 +1,7 @@
 CREATE TABLE Userinfo (
     userid INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     uAccountEmail NVARCHAR(30) NOT NULL UNIQUE,
-    uPwd NVARCHAR(20) NOT NULL,
+    uPwd NVARCHAR(35) NOT NULL,
     uName NVARCHAR(25) NOT NULL,
     uNickname NVARCHAR(10),
     uGender CHAR(1),
