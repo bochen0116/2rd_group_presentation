@@ -27,7 +27,7 @@
         | --- | --- | --- | --- | --- | --- |
         | 會員編號 | *userid | INT | NOT NULL, PRIMARY KEY, IDENTITY(1,1) |  |  |
         | 帳號（電子信箱） | uAccountEmail | *NVARCHAR(30) | NOT NULL,*UNIQUE KEY |  |  |
-        | 密碼 | uPwd | *NVARCHAR(20) | NOT NULL |  |  |
+        | 密碼 | uPwd | *NVARCHAR(35) | NOT NULL |  |  |
         | 姓名 | uName | NVARCHAR(25) | NOT NULL |  |  |
         | 暱稱 | uNickname | NVARCHAR(10) |  |  |  |
         | 性別 | uGender | CHAR(1) |  |  | 女：F / 男：M / 其他：O |
@@ -52,6 +52,7 @@
     - 密碼
         - 密碼長度7~20字，含英文字母和數字，不可空格，支援特殊字元 #?!@$%^&*-_
         - 請輸入8-16位英文字母與數字混和之密碼
+        - 之後會對密碼加鹽加密，所以把長度增加至35字
     - 姓名
     20 字 為限（參照台灣最大取名）
         - 姓名極端範例
