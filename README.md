@@ -35,7 +35,7 @@
         | 電話 | uTel | VARCHAR(25) | NOT NULL |  |  |
         | 居住地（市） | addCityid | INT |  | Citys(addCityid) |  |
         | 居住地（區） | addAreaid | INT |  | Areas(addAreaid) |  |
-        | 身分證 | uIdCode | CHAR(10) |  |  |  |
+        | 身分證 | uidCode | CHAR(10) |  |  |  |
         | 權限 | wrid | INT |  | WebRole(wpid) |  |
     
     ### 簡述
