@@ -10,6 +10,5 @@ CREATE TABLE Userinfo (
     addCityid INT,
     addAreaid INT,
     uIdCode CHAR(10),
-    wrid INT NOT NULL,
-    userImgid INT --REFERENCES UserImg(userImgid),
-);
+    wrid INT NOT NULL
+    );

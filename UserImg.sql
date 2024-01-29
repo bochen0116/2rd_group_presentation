@@ -1,5 +1,5 @@
 CREATE TABLE UserImg(
     userImgid INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-    userId INT NOT NULL,
+    userId INT NOT NULL REFERENCES Userinfo(userId),
     uImgpath NVARCHAR(255) NOT NULL,
 )

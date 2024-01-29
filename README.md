@@ -37,7 +37,6 @@
         | 居住地（區） | addAreaid | INT |  | Areas(addAreaid) |  |
         | 身分證 | uIdCode | CHAR(10) |  |  |  |
         | 權限 | wrid | INT |  | WebRole(wpid) |  |
-        | 頭貼 ID | userImgId | INT |  | UserImg(userImgId) |  |
     
     ### 簡述
     
@@ -68,7 +67,7 @@
     - 生日
     - 個人頭貼
         - ~~拉一個Table圖片儲存位置，往後維護比較方便？~~
-        - userImgId
+        - 透過 userid 從 UserImg 撈出使用者頭貼
         - 參照 **[UserImg](https://github.com/bochen0116/2rd_group_presentation/blob/main/UserImg.sql) Table**
     - 電話
         - 區號 (+886 、+81) + 請輸入 7~20 碼數字
@@ -90,7 +89,7 @@
     - 權限
         - Foreign key
         - roleId
-        - 參照 role **Table**
+        - 參照 WebRole **Table**
     
     ---
     
