@@ -7,8 +7,8 @@ CREATE TABLE Userinfo (
     uGender CHAR(1),
     uBirthday DATE,
     uTel NVARCHAR(25) NOT NULL,
-    addCityid INT,
-    addAreaid INT,
+    addCityid INT REFERENCES Citys(userId),
+    addAreaid INT REFERENCES Userinfo(userId),
     uIdCode CHAR(10),
     wrid INT NOT NULL
     );

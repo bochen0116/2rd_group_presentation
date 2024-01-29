@@ -1,5 +1,5 @@
 CREATE TABLE Citys (
-    addCityId INT NOT NULL PRIMARY KEY,
+    addCityid INT NOT NULL PRIMARY KEY,
     cityName  NCHAR (3) NOT NULL,
 );
 
