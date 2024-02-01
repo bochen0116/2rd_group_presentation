@@ -1,7 +1,7 @@
 
 CREATE TABLE Areas (
     addAreaid INT NOT NULL PRIMARY KEY IDENTITY (1, 1),
-    addCityId INT NULL,
+    addCityid INT NULL,
     areaName NVARCHAR (5) NULL,
 );
 
